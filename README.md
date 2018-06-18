@@ -1,2 +1,2 @@
-# mfp-pincode-ionic
-MFP Pincode Sample in Ionic 3.x
+# mfp-userlogin-ionic
+MFP UserLogin Sample in Ionic 3.x
