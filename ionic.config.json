@@ -1,6 +1,8 @@
 {
-  "name": "PincodeIonic",
-  "app_id": "",
+  "name": "MFPUserLoginIonic",
+  "app_id": "com.mfp.userlogin",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

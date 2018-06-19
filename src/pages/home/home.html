@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      MFP User Login
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    <button ion-button icon-left outline (click)="getBalance()">
+    <ion-icon name="ios-cloud-upload-outline">
+    </ion-icon>Get Balance</button>
   </p>
+  <p>Your Balance : <font color="red"><pre>{{balance}}</pre></font></p>
 </ion-content>

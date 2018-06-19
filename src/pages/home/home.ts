@@ -7,8 +7,22 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  balance: string;
 
+  constructor(public navCtrl: NavController) { 
+    console.log('--> HomePage constructor')
   }
 
+  getBalance() {
+    var resourceRequest = new WLResourceRequest("/adapters/ResourceAdapter/balance",WLResourceRequest.GET);
+    resourceRequest.send().then((response) => {
+      console.log('-->  getBalance(): Success ', response);
+        this.balance = response.responseText;
+    },
+    function(error){
+        console.log('-->  getBalance():  ERROR ', error.responseText);
+        console.log(error);
+    });
+  }
+  
 }
