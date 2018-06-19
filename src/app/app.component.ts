@@ -51,11 +51,11 @@ export class MyApp {
       inputs: [
         {
           name: 'username',
-          placeholder: 'user'
+          placeholder: 'username'
         },
         {
           name: 'password',
-          placeholder: 'pw',
+          placeholder: 'password',
           type: 'password'
         },
       ],
